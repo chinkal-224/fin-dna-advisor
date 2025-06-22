@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# FinDNA Advisor - Smart Financial Planning
 
-## Project info
+FinDNA Advisor is an AI-powered financial advisor platform that provides smart investment decisions and comprehensive financial planning solutions.
 
-**URL**: https://lovable.dev/projects/5fd1b2fb-8e36-4b4d-a10e-ed82ab1e1ea1
+## Features
 
-## How can I edit this code?
+- 🤖 AI-powered chatbot for financial advice
+- 📈 Stock prediction and analysis
+- 💰 Investment recommendations
+- 📊 Portfolio management insights
+- 🛡️ Risk assessment and planning
+- 💳 Financial planning tools
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5fd1b2fb-8e36-4b4d-a10e-ed82ab1e1ea1) and start prompting.
+- Node.js (v18 or higher)
+- npm or yarn
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies:
+```sh
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Start the backend server:
+```sh
+cd backend
+npm install
+npm start
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Technologies Used
 
-**Use GitHub Codespaces**
+- **Frontend**: React, TypeScript, Vite
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **AI/ML**: Custom stock prediction models
+- **Database**: MongoDB (for chat storage)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+├── src/                 # Frontend React application
+├── backend/            # Backend Node.js server
+│   ├── ai/            # AI models and stock prediction
+│   ├── controllers/   # API controllers
+│   ├── models/        # Database models
+│   └── routes/        # API routes
+├── public/            # Static assets
+└── components/        # Reusable UI components
+```
 
-This project is built with:
+## Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/5fd1b2fb-8e36-4b4d-a10e-ed82ab1e1ea1) and click on Share -> Publish.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License.
